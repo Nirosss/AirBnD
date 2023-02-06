@@ -1,0 +1,162 @@
+.el-carousel__button {
+    width: 6px;
+    height: 6px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: -1px;
+}
+.stay-preview {
+    padding-top: 10px;
+}
+
+.card-container {
+    cursor: pointer;
+    max-height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    color: #222;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 1.125rem;
+    // background-color: #000000;
+
+    img {
+        border-radius: 0.75em;
+        width: 100%;
+        aspect-ratio: 20/19;
+        object-fit: cover;
+    }
+
+    .preview-section {
+        width: 100%;
+
+        .el-carousel {
+            border-radius: 0.75rem;
+        }
+
+        .el-carousel__container {
+            aspect-ratio: 1/1;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .el-carousel__item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .el-carousel__arrow {
+            z-index: 10 !important;
+            background-color: #eeeeee;
+            transform: translateY(-50%);
+            height: 27px;
+            width: 27px;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            display: inline-flex;
+        }
+
+        .el-carousel__button:last-child {
+            color: #000;
+        }
+
+        .el-carousel__indicators--horizontal {
+            bottom: 13px;
+            // padding-right: 50px;
+        }
+    }
+
+    .wishList {
+        position: absolute;
+        z-index: 1;
+        background-color: inherit;
+        right: 1px;
+        top: 4px;
+        cursor: pointer;
+        stroke: #eeeeee;
+        stroke-width: 2px;
+        fill: rgba(0, 0, 0, 0.5);
+
+        .saved {
+            fill: #ff385c;
+        }
+
+        svg {
+            display: block;
+            height: 24px;
+            width: 24px;
+            overflow: visible;
+        }
+    }
+
+    .text-container {
+        margin-top: 14px;
+        font-size: 15px;
+        font-family: "airbnb-book";
+        text-overflow: ellipsis " [..]";
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            align-self: center;
+            align-content: center;
+            white-space: nowrap;
+            margin-bottom: 3px;
+            margin-top: -14px;
+            color: #222222;
+
+            span {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-weight: 600;
+                padding: 1.5px;
+            }
+            .rating-value{
+                font-weight: unset;
+                font-weight: 400;
+            }
+            .sum-reviews {
+                font-family: "airbnb-medium";
+                font-weight: 200;
+            }
+        }
+        .name {
+            // text-overflow: ellipsis;
+            // max-width: 2ch;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 75%;
+            white-space: nowrap;
+            color: #969a9a;
+        }
+        .num-of-bads {
+            margin-top: 1.8px;
+            color: #969a9a;
+        }
+
+        .price-night {
+            margin-top: 6px;
+            color: #292222;
+
+            .price {
+                font-weight: bold;
+            }
+        }
+    }
+}
+

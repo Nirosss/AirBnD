@@ -1,0 +1,52 @@
+.container-login {
+  margin-top: 150px;
+  width: min(100% - 25px, 380px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #00000030;
+  border-radius: 13px;
+  padding: 20px;
+  box-shadow: 0 0 3px 3px #8e8c8c15;
+  font-family: 'Circular', -apple-system, 'BlinkMacSystemFont', 'Roboto',
+    'Helvetica Neue', sans-serif;
+  button {
+    height: 2rem;
+    width: 200px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-inline: auto;
+  }
+  a{
+   & .link{
+    all: unset;
+    color: blue;
+    
+  }}
+  input {
+    width: 90%;
+    font-size: 14px;
+    background-color: aliceblue;
+  }
+}
+
+.out-of-form {
+  background-color: white;
+  color: $clr2;
+  height: 2rem;
+  width: min(100% - 25px, 380px);
+  margin-inline: auto;
+  margin-top: 25px;
+  cursor: pointer;
+
+  font-size: 1.1rem;
+  &.btn {
+    border: 1px $clr2 solid;
+    border-radius: 5px;
+  }
+}
